@@ -72,6 +72,7 @@ public class GirisActivity extends AppCompatActivity {
                 if(TextUtils.isEmpty(str_emailGiris) || TextUtils.isEmpty(str_sifreGiris))
                 {
                     Toast.makeText(GirisActivity.this, "Bütün alanları doldurun", Toast.LENGTH_SHORT).show();
+                    pdGiris.cancel();
                 }else
                 {
                     girisYetkisi.signInWithEmailAndPassword(str_emailGiris,str_sifreGiris).addOnCompleteListener(GirisActivity.this, new OnCompleteListener<AuthResult>() {

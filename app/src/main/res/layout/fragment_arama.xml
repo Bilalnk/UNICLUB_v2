@@ -30,6 +30,7 @@
         android:background="@android:color/transparent"
         android:hint="  Arama"
         android:textColorHint="@color/solgun"
+        android:textColor="@color/colorAccent"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
